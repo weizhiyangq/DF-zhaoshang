@@ -6,4 +6,16 @@ DDF招商赛A榜top9特征分析
 
 #### 比赛链接：http://www.datafountain.cn/competitions/287/details/rule
 最终的模型为 lightgbm 、xgboost、lr的融合，融合方式为stacking
-had
+
+#原始数据特征
+原始特征分布在train_agg、test_agg、train_log、test_log这几个表中，其中agg表为30维度左右的匿名特征，log表有3个字段：EVT_LBL、	
+OCC_TIM	、TCH_TYP。其中EVT_LBL为点击模块的三级字段，详情看比赛介绍，OCC_TIM字段为操作时间记录、TCH_TYP为点击类型。
+
+###赛题难点地方
+这个赛题，我觉得有3个难点需要面对：
+1、样本正负严重不平衡，据统计，正：负约为 1:25
+2、特征严重缺失。训练样本有8万用户，但log记录的用户只有4万左右，就是说，有一般左右的人缺少这部分的特征。而这部分特征恰好是训练的关键特征
+3、agg表都是匿名特征，无法从业务的角度来分析，智能从统计方面入手
+
+
+
