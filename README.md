@@ -62,6 +62,6 @@ OCC_TIM	、TCH_TYP。其中EVT_LBL为点击模块的三级字段，详情看比�
 stacking就是把第一层模型对验证集的预测概率结果作为第二层模型的特征输入，用新模型进行新一轮的训练，有点类似神经网络的做法
 第一层用了lightgbm 、xgboost、svm等 第二层用了lr 和lasso
 
-
+#里面有两份文件，一份为特征清洗、特征构造的py，另一份为模型文件（里面有lightgbm和xgboost模型），svm和lr是队友所写，因而没放上来。
 
 
