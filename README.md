@@ -6,3 +6,4 @@ DDF招商赛A榜top9特征分析
 
 #### 比赛链接：http://www.datafountain.cn/competitions/287/details/rule
 最终的模型为 lightgbm 、xgboost、lr的融合，融合方式为stacking
+had
